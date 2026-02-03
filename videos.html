@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolonda's Place | Videos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Styles for Videos Page */
+        body {
+            background-color: var(--charcoal); /* Dark theme for video viewing */
+            color: var(--cream);
+        }
+
+        .video-header {
+            text-align: center;
+            padding: 8rem 1rem 4rem;
+        }
+
+        .video-title {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-serif);
+        }
+
+        .video-subtitle {
+            color: var(--terracotta);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-family: var(--font-sans);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
+            gap: 1.5rem;
+            padding: 0 1rem 6rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .video-grid {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns tablet */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .video-grid {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns desktop */
+            }
+        }
+
+        .video-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 177.77%; /* 9:16 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation Override */
+        .back-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+        }
+
+        .back-nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-nav a:hover {
+            color: var(--terracotta);
+        }
+
+        .nav-brand {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="back-nav">
+        <a href="index.html" class="nav-brand">Yolonda's Place</a>
+        <div style="display: flex; gap: 2rem;">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+        </div>
+    </nav>
+
+    <header class="video-header fade-in-up">
+        <p class="video-subtitle">Watch Us Work</p>
+        <h1 class="video-title">The Vibe</h1>
+    </header>
+
+    <div class="video-grid">
+        
+        <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQM0BXae2Xk2j94i7G1mslTBXWbWHWmerEYnIvje03Pr3SO-4Et_71Js0utcpCfJzlnlmsMNknmWTXyV0HtK4LjLC9HTDlI7sP5QsiK1YyZPHw.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-1">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQM4NYSVtwpCjwr5RhdpDV8uUggyiOYMRNdU1ewRxu8nu1IdmMmo6JA4DCzipKDg9eHYQhpKuc6Gp0Cl-fss4iH5-oN0Z8gNJ3h68rI.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-2">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQM5KqjvNoGeobGnf9B6lpVqocG8PfjpSww9HVXfC-H41tLgmv0XizvxhQKju4_fJ46jpPD2VB_k5_CGN7Pjmex4b6YE6kEiAbN2eps.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQMtCULsmtgGQGjlzCsLNGO9DxXWKM-Kn2M73dBx7v-GDEJFc64FSk_isdEB1IOPQjGfBVyKVDr832eFzslv2hkx.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-1">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQNkP3UGD6CvKnUniQqCpGRwikmg3_HZRvhMDAhKwpyxzs2OkIXeA7kqF2nRfMVcu0WISPcURBwD3IfI7SDP-_LH.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-2">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQNwGviJlH6nnge8vbg5kGuSgN50edofv1LbFcLPDdvnBvzP-YhmDUFbFVwi424Na6fASL0t6eqDYH2wkX6r4ZkH6YNRPuynIw2WG-s.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQO0aZ6SW7PVitEUdYpvMy3q6I3OnaTMzy8C9l9Z1drzyjwHJpnnPs55CiPAWTWhGvB2oagceOjOywcYHjVzH9bR.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-1">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQPm3QslQwYURktrUekkB4yMUN70a6aHgmX4I_U8TG7HI2029FW0dMa_BS1rCQaTihzCL1fdQwSk809B_RtWQ1ieG_zy-bTcMjzYcGU.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal delay-2">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQPmfgH7wKvqSFuCMCUAhrz8numHJrHiosCc7dpcmX7FwmoOeeCQDqnexFFOXg4rTQvNGxAiTI2ZwQJCrcOgp6OVMipQ9DhtI1Jl5UA.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="video-card scroll-reveal">
+            <div class="video-wrapper">
+                <video autoplay loop muted playsinline controls>
+                    <source src="videos/AQPpbxARYlpEA5H7GA_SrQ596OY2ntnxhXRJwGQ04DHh4cChARwN9vjE8AdkDSAjV6DepiLoe_poDWVDvUTyZ8Gb.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 class="footer-logo">YOLONDA'S PLACE</h2>
+                    <p class="footer-desc">Authentic Jerk & Soul Food.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <p>(765) 236-3900</p>
+                    <p>yolondasplace@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/YolondasPlace" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yolonda's Place. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
